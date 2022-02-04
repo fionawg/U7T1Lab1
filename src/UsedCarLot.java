@@ -91,11 +91,7 @@ public class UsedCarLot
     public void moveCar(int indexOfCarToMove, int destinationIndex)
     {
         Car temp = inventory.get(indexOfCarToMove);
-        if (destinationIndex > indexOfCarToMove){
-            
-        }
-        if (destinationIndex < indexOfCarToMove){
-
-        }
+        inventory.remove(indexOfCarToMove);
+        inventory.add(destinationIndex, temp);
     }
 }
